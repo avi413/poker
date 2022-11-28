@@ -1,9 +1,13 @@
-import './App.scss';
+import Header from '../Header/Header';
+
+import '../../sass/main.scss'
+import Hero from '../Hero/Hero';
 
 function App() {
   return (
     <div className="App">
-      <p>f</p>
+      <Header/>
+      <Hero />
     </div>
   );
 }

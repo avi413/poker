@@ -1,0 +1,23 @@
+@use '../abstracts/colors';
+
+.navigation {
+    color: $light;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 0 16px;
+
+    &__item {
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: inherit;
+        padding: 1rem 0;
+        border: none;
+        outline: none;
+        padding: 16px 0;
+    }
+}

@@ -1,0 +1,25 @@
+@use '../abstracts/mixins';
+
+.header {
+    background-color: black;
+}
+
+.header__container {
+    @include flex-center;
+    max-width: 65rem;
+    margin: auto;
+}
+
+.header__menu {
+    max-width: 80rem;
+    height: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-container {
+    display: flex;
+    margin: auto 1em;
+}
