@@ -1,0 +1,198 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+body {
+  font-family: "888", Helvetica, sans-serif;
+}
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+:-ms-input-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+@font-face {
+  font-family: "888";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/888-medium-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "888";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../fonts/888-demibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "888";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/888-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "888";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../../fonts/888-ultra-webfont.woff") format("woff");
+}
+.navigation {
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  padding: 0 16px;
+}
+.menu__item {
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: inherit;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  padding: 16px 0;
+}
+
+.header {
+  background-color: black;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.header__menu {
+  max-width: 80rem;
+  height: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-container {
+  display: flex;
+  margin: auto 1em;
+}
+
+.btn {
+  padding: 4px 16px;
+  border-radius: 34px;
+  font-size: 16px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.btn-primary {
+  background-color: #0070e0;
+  color: #fff;
+}
+.btn-waening {
+  background-color: #fee92c;
+  color: #000;
+}
+.btn-dark {
+  background-color: #000;
+  color: #969696;
+}
+
+.hero {
+  width: 100%;
+  height: 62vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=main.css.map */

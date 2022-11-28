@@ -1,0 +1,11 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins' as *;
+
+.btn {
+    @include button;
+    @each $color, $values in $btn-scheme {
+        &-#{$color} {
+            @include button-colors ($values...);
+        }
+    }
+}

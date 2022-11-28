@@ -1,0 +1,30 @@
+//colors
+$blue:       #0070e0;
+$black:      #000;
+$yellow:     #fee92c;
+$white:      #fff;
+$gray:       #f4f4f4;
+$light-gray: #969696;
+
+//theme color map
+$primary:       $blue;
+$secondary:     $gray;
+$natural:       $light-gray;
+$warning:       $yellow;
+$light:         $white;
+$dark:          $black;
+
+$btn-scheme: (
+    'primary':   $blue $light,
+    'waening':   $warning $dark,
+    'dark':      $dark $natural,
+);
+
+//theme color map
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "warning": $warning,
+    "light": $light,
+    "dark": $dark,
+)
