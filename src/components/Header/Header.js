@@ -1,7 +1,7 @@
 import React from 'react';
 import PcLogo from '../../media/poker-20-years-logo-PC.png';
 import Navigation from '../Navigation/Navigation';
-
+import { menu } from '../../const/menu';
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
          </a>
         </div>
         <div className='header__menu'>
-        <Navigation></Navigation>
+        <Navigation menu={menu}/>
         </div>
 
         <button className='btn btn-primary'>play Now</button>
