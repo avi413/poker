@@ -23,6 +23,9 @@
 
     &__item:hover .subMenu {
         display: block;
+        box-shadow: var(--shadow-medium);
+        transform: translateY(1rem);
+        transition: all 0.25s ease;
     }
 
     .subMenu {
@@ -47,10 +50,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
     .navigation {
         display: none;
     }
