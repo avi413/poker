@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/poker/static/css/main.7c65f1e4.css",
-    "main.js": "/poker/static/js/main.a958fc4a.js",
+    "main.css": "/poker/static/css/main.761f5e3a.css",
+    "main.js": "/poker/static/js/main.3a458382.js",
     "static/media/PokerHP-MTP-PC-Compressed.mp4": "/poker/static/media/PokerHP-MTP-PC-Compressed.b70177c895434f2ffdca.mp4",
     "static/media/888-bold-webfont.woff": "/poker/static/media/888-bold-webfont.9a579042fa771a3cd6f4.woff",
     "static/media/888-medium-webfont.woff": "/poker/static/media/888-medium-webfont.bbe65c8004933be0a858.woff",
     "static/media/888-demibold-webfont.woff": "/poker/static/media/888-demibold-webfont.3a8aa8cfa712fd035303.woff",
     "static/media/888-ultra-webfont.woff": "/poker/static/media/888-ultra-webfont.37e9beb8d5bf0be0b67f.woff",
     "index.html": "/poker/index.html",
-    "main.7c65f1e4.css.map": "/poker/static/css/main.7c65f1e4.css.map",
-    "main.a958fc4a.js.map": "/poker/static/js/main.a958fc4a.js.map"
+    "main.761f5e3a.css.map": "/poker/static/css/main.761f5e3a.css.map",
+    "main.3a458382.js.map": "/poker/static/js/main.3a458382.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c65f1e4.css",
-    "static/js/main.a958fc4a.js"
+    "static/css/main.761f5e3a.css",
+    "static/js/main.3a458382.js"
   ]
 }
